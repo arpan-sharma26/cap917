@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cap917"
+    }
+  },
+  "defaultProject": "cap917",
+  "cli": {
+    "analytics": "117110eb-530b-4b06-83ea-24ae40375a69"
+  }
 }

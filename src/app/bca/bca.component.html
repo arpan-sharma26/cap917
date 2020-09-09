@@ -1,0 +1,47 @@
+        <p>Let's create a form</p>
+            <label> Enter first name:- </label>
+            <input type="text">
+            <br> <br>
+            <label>Enter second name:- </label>
+            <input type="text">
+            <br> <br>
+            <label>Select your age group:-</label>
+            <br>
+            <label>Under 18asd</label>
+            <input type="radio">
+            <br>
+            <label>18-22</label>
+            <input type="radio">
+            <br>
+            <label>22-25</label>
+            <input type="radio">
+            <br>
+            <label>25+</label>
+            <input type="radio">
+            <br>
+            <button id="btn">click me for action</button>
+            <div>
+            <p> {{"course detail: "+ title}} </p>  <!--this is string interpolation-->
+            <ul *ngFor="let var1 of course;">
+                <h1> {{var1}} </h1>
+            </ul>
+            <h4 *ngIf="qwerty; else elseBlock">Hello World</h4>
+
+            <ng-template #elseBlock> 
+                <h3>Else statement RAN</h3> 
+            </ng-template>
+
+            <div [ngSwitch]="color">
+                <div *ngSwitchCase="'blue'">You picked blue color</div>
+                <div *ngSwitchCase="'red'">You picked red color</div>
+                <div *ngSwitchDefault>Default Option</div>
+            </div>
+
+            <button (click)=onclick()>greet</button>
+            <p> {{var100}} </p>
+            <br>
+            <p>Two-way Binding</p>
+            <input [(ngModel)]="name" type="text"/>
+            <p> {{name}} </p>
+
+            <h1> {{item}} </h1> <!--string interpolation-->

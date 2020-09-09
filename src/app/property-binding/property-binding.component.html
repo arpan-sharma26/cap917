@@ -1,0 +1,12 @@
+<p> property-binding works! </p>
+<h3> {{title}} </h3>
+<input [type]="sample" value="Arpan">
+<input [disabled]="isDisabled" [class]="myID" type="text" placeholder="Arpan">
+
+<!--switch case-->
+
+<div [ngSwitch]="user">
+    <div *ngSwitchCase=1> <input type="radio" value="Arpan"> </div>
+    <div *ngSwitchCase=2> <input type="button" value="Arpan"> </div>
+    <div *ngSwitchDefault> <input type="text" value="Arpan"> </div>
+</div>
